@@ -17,7 +17,8 @@ NEWSPIDER_MODULE = "spaceAppScraper.spiders"
 # USER_AGENT = 'spaceAppScraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# Sorry I know it's bad
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
