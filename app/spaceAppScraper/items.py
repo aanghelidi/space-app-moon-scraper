@@ -3,10 +3,10 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Field, Item
 
 
-class SpaceappscraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class MoonDataFileItem(Item):
+    file_urls = Field()
+    original_file_name = Field()
+    files = Field()
