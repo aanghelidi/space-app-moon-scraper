@@ -68,7 +68,7 @@ ITEM_PIPELINES = {
 }
 
 # Specify where to store the data
-# FILES_STORE = '/media/aangel/Laurent HDD/space_app_data/s11'
+# FILES_STORE = ''
 DOWNLOAD_WARNSIZE = 0
 DOWNLOAD_MAXSIZE = 0
 
