@@ -65,4 +65,4 @@ COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Use scrapy
-ENTRYPOINT ["scrapy","crawl","moonscraper"]
+ENTRYPOINT ["scrapy","crawl"]
