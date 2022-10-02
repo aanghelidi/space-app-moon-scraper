@@ -6,6 +6,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import os
 
 BOT_NAME = "spaceAppScraper"
 
@@ -68,7 +69,7 @@ ITEM_PIPELINES = {
 }
 
 # Specify where to store the data
-# FILES_STORE = ''
+FILES_STORE = os.getenv("FILES_STORE", "/tmp/data")
 DOWNLOAD_WARNSIZE = 0
 DOWNLOAD_MAXSIZE = 0
 

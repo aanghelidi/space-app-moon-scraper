@@ -58,11 +58,11 @@ RUN chown -R $APP_USER:users app/
 USER $APP_USER
 RUN find app/ -name "__pycache*" | xargs rm -rf
 # Cd into app directory
-WORKDIR app
+WORKDIR app/spaceAppScraper
 
 # Activate venv
 COPY --from=builder /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Use scrapy
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["scrapy","crawl","moonscraper"]
